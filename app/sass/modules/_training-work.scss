@@ -1,0 +1,139 @@
+.training-work {
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .outline {
+    margin-bottom: 20px;
+  }
+
+  .letter {
+    width: 68px;
+    height: 68px;
+  }
+
+  .wrap {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+
+    @media only screen and (min-width : 992px){
+      justify-content: space-around;
+      flex-flow: nowrap;
+    }
+  }
+
+  .wrap-item {
+    width: 100%;
+    margin-top: 30px;
+
+    @media only screen and (min-width : 992px){
+      max-width: 236px;
+      margin: 15px;
+      padding-left: 30px;
+      padding-right: 19px;
+    }
+
+    .item:nth-child(2),
+    .item:nth-child(3) {
+      @media only screen and (min-width : 992px){
+        display: flex;
+
+        .question {
+          width: 59px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .orient-row {
+      @media only screen and (min-width : 992px){
+        display: flex;
+
+        .question {
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .orient-row-wrap{
+      display: flex;
+      flex-flow: wrap;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      @media only screen and (min-width : 992px) {
+        justify-content: space-between;
+      }
+
+      .question {
+        width: 100%;
+      }
+    }
+  }
+
+  .item {
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    padding: 10px 0;
+  }
+
+  .desc {
+    @include fontSize(24px);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .question {
+    @include fontSize(18px);
+    font-weight: bold;
+  }
+
+  .answer {
+    @include fontSize(14px);
+  }
+
+  ul li:before {
+    content:  "—";
+    margin-right: 5px;
+  }
+
+  .foot-text {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .total {
+    @include fontSize(18px);
+    margin-right: 15px;
+    padding-top: 10px;
+
+    @media only screen and (min-width : 992px){
+      margin-right: 0;
+    }
+
+    .value,
+    .term {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      margin-right: 9px;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .btn {
+    margin-top: 10px;
+
+    @media only screen and (min-width : 992px){
+      margin-left: -30px;
+      margin-right: -20px;
+    }
+  }
+}

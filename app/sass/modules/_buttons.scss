@@ -1,0 +1,19 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 236px;
+  min-height: 70px;
+  color: $color-text-btn;
+  font-family: $default-font-1;
+  @include fontSize(28px);
+  font-weight: 700;
+  background: url("../img/bg-btn.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 10px 15px 25px;
+
+  &:hover {
+    background: url("../img/bg-btn-active.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}

@@ -1,0 +1,74 @@
+.work {
+  .head-box {
+    align-items: center;
+
+    .title {
+      max-width: 128px;
+    }
+  }
+
+  .price,
+  .time {
+    display: inline-block;
+    @include fontSize(14px);
+  }
+
+  .time {
+    text-align: right;
+    font-weight: 700;
+  }
+
+  .wrap-galery {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    @media only screen and (min-width : 768px){
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+
+    @media only screen and (min-width : 940px){
+      justify-content: space-between;
+      flex-flow: nowrap;
+    }
+
+    .item-galery {
+      max-width: 244px;
+      width: 100%;
+      margin-top: 15px;
+      margin-left: 0;
+      margin-right: 0;
+
+      @media only screen and (min-width : 768px){
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+      }
+
+      @media only screen and (min-width : 940px){
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .big-carousel {
+    .slick-track {
+      height: 164px;
+    }
+  }
+
+  .little-carousel {
+    margin-top: 5px;
+
+    .slick-track {
+      height: 41px;
+    }
+
+    .item-photo {
+      margin-left: 2.5px;
+      margin-right: 2.5px;
+      outline: none;
+    }
+  }
+}

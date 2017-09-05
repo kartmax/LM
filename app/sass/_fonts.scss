@@ -1,0 +1,11 @@
+@import "bourbon";
+
+@include font-face("Calibri", "../fonts/Calibri/Calibri", 400, $file-formats: ttf);
+@include font-face("Calibri", "../fonts/Calibri/Calibri Bold", bold, $file-formats: ttf);
+@include font-face("Calibri", "../fonts/Calibri/calibril", light, $file-formats: ttf);
+
+@include font-face("Helvetica", "../fonts/Helvetica/Helvetica-Condensed-Black", 900, $file-formats: otf);
+
+@include font-face("HelveticaNeue", "../fonts/HelveticaNeueCondBlack/HelveticaNeue-CondensedBlack", 700, $file-formats: eot woff ttf);
+@include font-face("HelveticaNeue", "../fonts/HelveticaNeueCondBold/HelveticaNeue-CondensedBold", 900, $file-formats: eot woff ttf);
+
