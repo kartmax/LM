@@ -1,12 +1,20 @@
 $(function() {
 
 	// Custom JS
+    //menu
+    $('#block-menu').append('<div class="mob-btn"><div class="icon-bar"></div><div class="icon-bar"></div><div class="icon-bar"></div><div class="icon-bar"></div></div>');
+
+    $('.mob-btn').click(function () {
+        $(this).toggleClass('active-mob-btn');
+        $('#block-menu .field').slideToggle(250);
+    });
 
 
     //shadow item project
     $('.item-project .option-item').hover(function () {
         $('.item-project').toggleClass('js-no-active-shadow');
     });
+
 
     //slick-slyder
     $('.big-carousel-1').slick({

@@ -1,0 +1,125 @@
+.path-frontpage {
+  #block-lm-zone-content {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.block-user,
+#block-lm-zone-content {
+  @extend .max-width;
+  @extend .marg-top;
+  @extend .padding-main;
+  background-color: $color-text-btn;
+  text-align: center;
+
+  h2 {
+    color: $main-color;
+    @include fontSize(25px);
+    font-weight: 700;
+  }
+
+  form {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .form-actions {
+    margin-bottom: 0;
+  }
+
+  .item-list {
+    @extend form;
+
+    a {
+      @extend input;
+      @extend input[type=submit];
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      margin-left: 0;
+    }
+  }
+
+
+  input {
+    width: 100%;
+    min-height: 40px;
+    background-color: #edebeb;
+    color: $main-color;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 15px;
+  }
+
+  input[type=submit] {
+    background-color: $color-btn;
+    color: $color-text-btn;
+    font-weight: 700;
+    transition: 0.1s;
+
+    &:hover {
+      background-color: $color-active-btn;
+    }
+  }
+
+  label {
+    display: block;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  summary {
+    font-weight: 700;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+  }
+
+  .details-wrapper {
+    padding-left: 20px;
+    padding-right: 0;
+    text-align: left;
+
+    .js-form-item {
+      margin-top: 0;
+    }
+
+    .form-checkbox {
+      min-height: 0;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
+  select {
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+.user-pass {
+  .js-form-item {
+    margin-bottom: 5px;
+  }
+
+  p {
+    @include fontSize(14px);
+    text-align: left;
+  }
+}

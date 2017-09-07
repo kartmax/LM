@@ -52,7 +52,7 @@ body textarea:focus:required:invalid {
 
 body input:required:valid,
 body textarea:required:valid {
-	color: #666;
+	color: #000;
 }
 /****************************/
 
@@ -186,6 +186,7 @@ main {
 
 a {
 	text-decoration: none;
+	color: $main-color;
 }
 
 b {
