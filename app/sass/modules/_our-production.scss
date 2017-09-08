@@ -1,0 +1,198 @@
+.path-frontpage {
+  .region-content {
+    @extend .max-width;
+    @extend .marg-top;
+    @extend .padding-main;
+    @extend .bg-content;
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+
+    .block-user {
+      order: 3;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+
+  .views-element-container {
+    .views-row {
+      position: relative;
+    }
+
+    .views-field-field-product-type {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px 10px;
+        color: $color-text-btn;
+      }
+    }
+
+    .views-row:first-child {
+      .views-field-field-product-type a {
+        background-color: #1cbbb4;
+      }
+    }
+    .views-row:nth-child(2) {
+      .views-field-field-product-type a {
+        background-color: #9f1cbb;
+      }
+    }
+    .views-row:nth-child(3) {
+      .views-field-field-product-type a {
+        background-color: #f57e20;
+      }
+    }
+    .views-row:nth-child(4) {
+      .views-field-field-product-type a {
+        background-color: #1cbbb4;
+      }
+    }
+
+    .views-field-field-photo {
+      .field-content {
+        line-height: 0;
+      }
+    }
+
+    .views-field-title {
+      a {
+        font-weight: 700;
+      }
+    }
+
+    .views-field-field-announcment {
+      color: #231f20;
+    }
+  }
+
+
+  //---------------block-1---------------------
+
+  .block-views-blockproducts-block-1 {
+    order: 1;
+    width: 100%;
+
+    @media only screen and (min-width : 768px){
+      width: calc(100% - 190px);
+    }
+
+    h2 {
+      font-family: $default-font-3;
+      @include fontSize(35px);
+      font-weight: 700;
+      padding-bottom: 15px;
+    }
+
+    .views-field-field-product-type {
+      a {
+        width: 181px;
+        min-height: 48px;
+        @include fontSize(30px);
+        font-weight: 300;
+      }
+    }
+
+    .views-field-title {
+      padding-top: 20px;
+      padding-bottom: 5px;
+
+      a {
+        font-family: $default-font-3;
+        @include fontSize(35px);
+      }
+    }
+
+    .views-field-field-announcment {
+      @include fontSize(14px);
+    }
+  }
+
+
+  //---------------block-2---------------------
+
+  .block-views-blockproducts-block-2 {
+    position: relative;
+    order: 2;
+    width: 100%;
+    margin-top: 30px;
+
+    @media only screen and (min-width : 768px){
+      width: 172px;
+      margin-top: 56px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: -15px;
+      width: calc(100% - 20px);
+      height: 1px;
+      background-color: $main-color;
+      opacity: 0.15;
+
+      @media only screen and (min-width: 768px) {
+        width: 1px;
+        height: calc(100% - 20px);
+        left: -10px;
+        top: 10px;
+      }
+    }
+
+    .slick-track {
+      margin-left: -2px;
+
+      @media only screen and (min-width: 768px) {
+        margin-left: 0;
+      }
+    }
+
+    .views-row {
+      padding-left: 2px;
+      padding-right: 2px;
+
+      @media only screen and (min-width: 768px) {
+        margin-bottom: 6px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .views-field-field-product-type {
+      left: 2px;
+
+      @media only screen and (min-width: 768px) {
+        left: 0;
+      }
+
+      a {
+        width: 82px;
+        min-height: 22px;
+        @include fontSize(13px);
+        font-weight: 700;
+      }
+    }
+
+    .views-field-title {
+      a {
+        @include fontSize(13px);
+      }
+    }
+
+    .views-field-field-announcment {
+      @include fontSize(12px);
+    }
+  }
+}
+

@@ -301,5 +301,46 @@ $(function() {
     $('.close-dop-galery').on('click', function () {
         $(this).parent('.dop-galery').removeClass('js-active-dop-gal');
     });
+    //**************************************
+
+    //carousel work
+    $('.block-views-blockproducts-block-1 .view-content').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: false,
+        fade: true,
+        centerMode: true,
+        asNavFor: '.block-views-blockproducts-block-2 .view-content'
+    });
+    $('.block-views-blockproducts-block-2 .view-content').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        vertical: true,
+        infinite: false,
+        asNavFor: '.block-views-blockproducts-block-1 .view-content',
+        arrows: false,
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+
+        responsive: [
+            {
+               breakpoint: 768,
+                settings: {
+                    vertical: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: false
+                }
+            }
+        ]
+    });
+
+    //**********************************
 
 });

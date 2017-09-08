@@ -1,0 +1,18 @@
+.path-frontpage  {
+  .region-content-bottom {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    overflow: hidden;
+
+    @media only screen and (min-width : 992px){
+      width: calc(100% + 60px);
+      margin-left: -30px;
+    }
+  }
+}
+
+#block-karta {
+  iframe {
+    width: 100%;
+  }
+}

@@ -159,10 +159,6 @@ main {
 
 .big-carousel {
 	cursor: pointer;
-
-	.slick-slide {
-		outline: none;
-	}
 }
 
 .little-carousel {
@@ -172,10 +168,10 @@ main {
 	.slick-current {
 		opacity: 1;
 	}
+}
 
-	.slick-slide {
-		outline: none;
-	}
+.slick-slide {
+	outline: none;
 }
 
 //**************************
