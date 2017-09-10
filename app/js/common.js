@@ -343,4 +343,21 @@ $(function() {
 
     //**********************************
 
+    //popup window
+    $('a.btn').magnificPopup();
+    //**********************************
+
+    //input type file
+    $('input[type=file]').styler();
+    //*********************************
+
+
+    //scroll menu
+    $("#block-menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 800);
+    });
+
 });

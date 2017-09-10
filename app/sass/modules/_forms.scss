@@ -5,6 +5,7 @@
   }
 }
 
+#block-zakazat,
 .block-user,
 #block-lm-zone-content {
   @extend .max-width;
@@ -45,7 +46,7 @@
     }
   }
 
-
+  textarea,
   input {
     width: 100%;
     min-height: 40px;
@@ -57,14 +58,33 @@
     padding: 5px 15px;
   }
 
+  textarea {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   input[type=submit] {
     background-color: $color-btn;
     color: $color-text-btn;
     font-weight: 700;
     transition: 0.1s;
+    margin-left: 0;
 
     &:hover {
       background-color: $color-active-btn;
+    }
+  }
+
+  input[type=file] {
+    background: none;
+    padding: 0;
+  }
+
+  #ajax-wrapper {
+    text-align: left;
+
+    label {
+      padding-bottom: 10px;
     }
   }
 
@@ -106,10 +126,31 @@
     }
   }
 
+  .js-form-item {
+    text-align: left;
+  }
+
+
   select {
     margin-top: 10px;
     cursor: pointer;
     outline: none;
+  }
+}
+
+.region-footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: none;
+}
+
+#block-zakazat {
+  position: relative;
+  margin-bottom: 10px;
+
+  @media only screen and (min-width : 768px){
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

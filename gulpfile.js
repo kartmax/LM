@@ -21,9 +21,9 @@ gulp.task('scripts', function() {
         'app/libs/slick/slick.min.js',
         // 'app/libs/slimmenu-master/dist/js/jquery.slimmenu.min.js',
         // 'app/libs/wow/wow.min.js',
-        // 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
         // 'app/libs/owl.carousel/dist/owl.carousel.min.js',
-        // 'app/libs/jqueryformstyle/jquery.formstyler.min.js',
+        'app/libs/jQueryFormStyle/jquery.formstyler.min.js',
         // 'app/libs/mixtup/mixitup.min.js',
 
 

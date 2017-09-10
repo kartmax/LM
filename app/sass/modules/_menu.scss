@@ -1,3 +1,4 @@
+
 #block-menu {
   position: relative;
   background-color: $main-color;
@@ -17,41 +18,41 @@
       justify-content: space-between;
       margin: auto;
     }
-  }
 
-  .field__item {
-    text-align: center;
+    .field__item {
+      text-align: center;
 
-    @media only screen and (min-width : 768px) {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-  }
-
-  a {
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    @include fontSize(18px);
-    font-weight: 700;
-    padding: 15px 0;
-    transition: 0.2s;
-
-    &:after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 13px;
-      width: 0;
-      height: 2px;
-      background-color: $color-text-btn;
-      transition: 0.1s;
+      @media only screen and (min-width : 768px) {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
     }
 
-    &:hover {
+    a {
+      position: relative;
+      display: inline-block;
+      color: #fff;
+      @include fontSize(18px);
+      font-weight: 700;
+      padding: 15px 0;
+      transition: 0.2s;
+
       &:after {
-        width: 100%;
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 13px;
+        width: 0;
+        height: 2px;
+        background-color: $color-text-btn;
+        transition: 0.1s;
+      }
+
+      &:hover {
+        &:after {
+          width: 100%;
+        }
       }
     }
   }
